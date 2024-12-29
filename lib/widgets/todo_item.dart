@@ -25,7 +25,7 @@ class TodoItem extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
           tileColor: Colors.white,
           leading: Icon(
-            todo.isDone! ? Icons.check_box : Icons.check_box_outline_blank,
+            todo.isDone? Icons.check_box : Icons.check_box_outline_blank,
             color: tdBlue,
           ),
           title: Text(
@@ -34,7 +34,7 @@ class TodoItem extends StatelessWidget {
                 color: tdBlack,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
-                decoration: todo.isDone! ? TextDecoration.lineThrough : null),
+                decoration: todo.isDone? TextDecoration.lineThrough : null),
           ),
           trailing: Container(
             padding: const EdgeInsets.all(0),
